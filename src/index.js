@@ -15,7 +15,7 @@ app.use(cookieParser());
 
 app.use(
 	cors({
-		origin: ['http://localhost:3000', 'http://localhost:8080'],
+		origin: ['https://chat-app-frontend-reactjs.herokuapp.com','https://chat-app-socketio-nodejs.herokuapp.com'],
 		credentials: true,
 	})
 );
