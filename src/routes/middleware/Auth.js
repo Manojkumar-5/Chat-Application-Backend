@@ -24,9 +24,7 @@ const AuthMiddleware = async (req, res, next) => {
 	const id = await verifyJWT(JWT_TOKEN);
 
 	if (!id) {
-		return res
-			.status(statusCodes.UNAUTHORIZED)
-			.json({ "Got error in Auth Middleware" });
+		return res.json("Auth Middleware");
 	}
 	res.locals.user = id;
 	next();
