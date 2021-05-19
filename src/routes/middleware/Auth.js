@@ -26,7 +26,7 @@ const AuthMiddleware = async (req, res, next) => {
 	if (!id) {
 		return res
 			.status(statusCodes.UNAUTHORIZED)
-			.json({ error: statusCodeMessages.UNAUTHORIZED });
+			.json({ "Got error in Auth Middleware" });
 	}
 	res.locals.user = id;
 	next();
