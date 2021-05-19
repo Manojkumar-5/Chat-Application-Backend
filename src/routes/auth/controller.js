@@ -12,7 +12,8 @@ const MAX_AGE = 3600;
 const COOKIE_OPTIONS = {
 	httpOnly: true,
 	maxAge: MAX_AGE * 1000,
-	sameSite: 'lax',
+	sameSite: 'none',
+	secure: true
 };
 
 const COOKIE_NAME = 'JWT_TOKEN';
